@@ -38,12 +38,12 @@ Number of addresses with 3 matches: 20
 Number of addresses with 4 matches: 1
 ```
 
-Here is such an example, with the API returning 3 results: the 3 GPS locations are too far from each otehr to be considered as the same place. We therefore keep the 3 GPS coordinates in the `"gps"` column.
+Here is such an example, with the API returning 3 results: the 3 GPS locations are too far from each other to be considered as the same place. We therefore keep the 3 GPS coordinates in the `"gps"` column.
 
 ![Google Maps screenshot](./assets/entangled.png)
 
 ```txt
-Distance 1<>0 : 20.32km
-Distance 2<>0 : 17.90km
-Distance 2<>1 : 16.35km
+Direct distance 1<>0 : 20.32km
+Direct distance 2<>0 : 17.90km
+Direct distance 2<>1 : 16.35km
 ```
