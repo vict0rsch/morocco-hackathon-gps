@@ -24,3 +24,26 @@ This work was done in the context of [the Morocco Solidarity Hackathon](https://
    ```
 
 4. The scripts will write a new file with 2 new columns: `"Google Maps query"` and `"gps"`.
+
+## Mismatches
+
+We tried our best to disentangle Google Maps results. Whenever possible, we try to select the best match in the list of candidates returned by the API.
+
+In some cases however, the API does not return enough information for us to be able to reliably select a single GPS location. This happens ~4% of cases:
+
+```txt
+Number of addresses with 1 matches: 6676
+Number of addresses with 2 matches: 283
+Number of addresses with 3 matches: 20
+Number of addresses with 4 matches: 1
+```
+
+Here is such an example, with the API returning 3 results: the 3 GPS locations are too far from each otehr to be considered as the same place. We therefore keep the 3 GPS coordinates in the `"gps"` column.
+
+![Google Maps screenshot](./assets/entangled.png)
+
+```txt
+Distance 1<>0 : 20.32km
+Distance 2<>0 : 17.90km
+Distance 2<>1 : 16.35km
+```
