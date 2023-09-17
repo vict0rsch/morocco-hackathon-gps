@@ -2,7 +2,9 @@
 
 Assign GPS locations to 7000 villages in Morocco
 
-This work was done in the context of [the Morocco Solidarity Hackathon](https://morocco-solidarity-hackathon.io/).
+This work was done in the context of [the Morocco Solidarity Hackathon](https://morocco-solidarity-hackathon.io/), in order to support the [Nt3awnou Rescue Map](https://huggingface.co/spaces/nt3awnou/Nt3awnou-rescue-map) effort.
+
+You can find more work from our team here: [Solidaraty Hackathon Data Curation](https://github.com/LamiaSal/SolidaratyHackathonDataCuration).
 
 ## How to use
 
