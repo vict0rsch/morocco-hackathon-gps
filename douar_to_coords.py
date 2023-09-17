@@ -256,4 +256,6 @@ if __name__ == "__main__":
     df = df.drop(columns=["query"])
     df["gps"] = gps_locs
 
-    df.to_excel(Path(file_name).stem + "-gps" + Path(file_name).suffix, index=False)
+    new_path = Path(file_name).stem + "-gps" + Path(file_name).suffix
+    print("Writing to ", str(new_path))
+    df.to_excel(new_path, index=False)
