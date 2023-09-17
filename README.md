@@ -22,3 +22,5 @@ This work was done in the context of [the Morocco Solidarity Hackathon](https://
    $ python douar_to_coords.py
    Writing to ./listes-localités-gps.xlsx
    ```
+
+4. The scripts will write a new file with 2 new columns: `"Google Maps query"` and `"gps"`.
